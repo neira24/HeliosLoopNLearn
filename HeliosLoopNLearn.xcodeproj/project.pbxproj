@@ -16,6 +16,8 @@
 		48D66932285DE2A8009C0BC7 /* HeliosLoopNLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D66931285DE2A8009C0BC7 /* HeliosLoopNLearnTests.swift */; };
 		48D6693C285DE2A8009C0BC7 /* HeliosLoopNLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6693B285DE2A8009C0BC7 /* HeliosLoopNLearnUITests.swift */; };
 		48D6693E285DE2A8009C0BC7 /* HeliosLoopNLearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6693D285DE2A8009C0BC7 /* HeliosLoopNLearnUITestsLaunchTests.swift */; };
+		48D6694C285DE4A9009C0BC7 /* DSWaveformImage in Frameworks */ = {isa = PBXBuildFile; productRef = 48D6694B285DE4A9009C0BC7 /* DSWaveformImage */; };
+		48D6694E285DE5B0009C0BC7 /* WorkspaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D6694D285DE5B0009C0BC7 /* WorkspaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		48D66937285DE2A8009C0BC7 /* HeliosLoopNLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeliosLoopNLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D6693B285DE2A8009C0BC7 /* HeliosLoopNLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliosLoopNLearnUITests.swift; sourceTree = "<group>"; };
 		48D6693D285DE2A8009C0BC7 /* HeliosLoopNLearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeliosLoopNLearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48D6694D285DE5B0009C0BC7 /* WorkspaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D6694C285DE4A9009C0BC7 /* DSWaveformImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				48D66923285DE2A8009C0BC7 /* Assets.xcassets */,
 				48D66925285DE2A8009C0BC7 /* LaunchScreen.storyboard */,
 				48D66928285DE2A8009C0BC7 /* Info.plist */,
+				48D6694D285DE5B0009C0BC7 /* WorkspaceViewController.swift */,
 			);
 			path = HeliosLoopNLearn;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = HeliosLoopNLearn;
+			packageProductDependencies = (
+				48D6694B285DE4A9009C0BC7 /* DSWaveformImage */,
+			);
 			productName = HeliosLoopNLearn;
 			productReference = 48D66917285DE2A6009C0BC7 /* HeliosLoopNLearn.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 48D6690E285DE2A6009C0BC7;
+			packageReferences = (
+				48D6694A285DE4A9009C0BC7 /* XCRemoteSwiftPackageReference "DSWaveformImage" */,
+			);
 			productRefGroup = 48D66918285DE2A6009C0BC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			files = (
 				48D6691F285DE2A6009C0BC7 /* ViewController.swift in Sources */,
 				48D6691B285DE2A6009C0BC7 /* AppDelegate.swift in Sources */,
+				48D6694E285DE5B0009C0BC7 /* WorkspaceViewController.swift in Sources */,
 				48D6691D285DE2A6009C0BC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48D6694A285DE4A9009C0BC7 /* XCRemoteSwiftPackageReference "DSWaveformImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmrschmidt/DSWaveformImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48D6694B285DE4A9009C0BC7 /* DSWaveformImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48D6694A285DE4A9009C0BC7 /* XCRemoteSwiftPackageReference "DSWaveformImage" */;
+			productName = DSWaveformImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48D6690F285DE2A6009C0BC7 /* Project object */;
 }
